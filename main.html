@@ -1,12 +1,32 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Elements</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
 
-<html>
-  <head>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-
-  <body>
-    <!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js"></script>
-  </body>
+    .block {
+      background-color: #f2f2f2;
+      border: 1px solid #ccc;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="block">1</div>
+    <div class="block">2</div>
+    <div class="block">3</div>
+    <div class="block">4</div>
+    <div class="block">5</div>
+    <div class="block">6</div>
+  </div>
+</body>
 </html>
